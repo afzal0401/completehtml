@@ -1,0 +1,40 @@
+<!--
+
+	Visibilty: none
+	visibilty: hidden
+
+display:none removes the element from the normal flow of the page, allowing other elements to fill in.
+
+visibility:hidden leaves the element in the normal flow of the page such that is still occupies space.
+1st <a href="http://example.com" style="display: none;">unseen</a> link.<br />
+2nd <a href="http://example.com" style="visibility: hidden;">unseen</a> link.<br />
+3rd <a href="http://example.com" style="opacity: 0;">unseen</a> link.
+
+
+	-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS visibility property</title>
+  <style type="text/css">
+    li.first {
+      visibility: visible;
+    }
+    li.second {
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <p>First block paragraph</p>
+  <ul>
+    <li class="first">This is block menu.1</li>
+    <li class="second">This is block menu.2</li>
+  </ul>
+  <p>Another block paragraph</p>
+  <ul>
+    <li>This is block menu.1</li>
+    <li>This is block menu.2</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Horizontal Navigation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: "Helvetica Neue", sans-serif;
+            margin: 0;
+        }
+        nav{
+            background-color: black;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden; /* see below */
+        }
+        nav ul li{
+            float: left; /* it has overflown the background color
+                            to fix this, we need to add overflow:hidden
+                            to the 'ul' */
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 14px 20px;
+            display: inline-block; /* mandatory */
+        }
+        nav ul li a:hover{
+            background-color: gray;
+            color: white;
+            border-radius: 7px;
+        }
+        nav ul li a.active{
+            background-color: forestgreen;
+            border-radius: 7px;
+        }
+        .mainContent{
+            margin-top: 60px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#" class="active">
+                   <i class="fa fa-home"></i> Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                   <i class="fa fa-address-card"></i> About
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <i class="fa fa-graduation-cap"></i>  Careers
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <i class="fa fa-envelope-o"></i>  Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="mainContent">
+        <h1>Page Content here</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor eos excepturi, fugiat in incidunt? Amet facilis in obcaecati sapiente?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci consectetur culpa dignissimos dolorem eligendi excepturi, explicabo fuga illo impedit ipsam ipsum iste libero minima molestiae nam neque, nesciunt non obcaecati odit possimus provident quaerat quidem quisquam quo reiciendis rem rerum saepe sapiente similique tenetur veniam veritatis voluptas voluptatem voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor eos excepturi, fugiat in incidunt? Amet facilis in obcaecati sapiente?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci consectetur culpa dignissimos dolorem eligendi excepturi, explicabo fuga illo impedit ipsam ipsum iste libero minima molestiae nam neque, nesciunt non obcaecati odit possimus provident quaerat quidem quisquam quo reiciendis rem rerum saepe sapiente similique tenetur veniam veritatis voluptas voluptatem voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor eos excepturi, fugiat in incidunt? Amet facilis in obcaecati sapiente?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci consectetur culpa dignissimos dolorem eligendi excepturi, explicabo fuga illo impedit ipsam ipsum iste libero minima molestiae nam neque, nesciunt non obcaecati odit possimus provident quaerat quidem quisquam quo reiciendis rem rerum saepe sapiente similique tenetur veniam veritatis voluptas voluptatem voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor eos excepturi, fugiat in incidunt? Amet facilis in obcaecati sapiente?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci consectetur culpa dignissimos dolorem eligendi excepturi, explicabo fuga illo impedit ipsam ipsum iste libero minima molestiae nam neque, nesciunt non obcaecati odit possimus provident quaerat quidem quisquam quo reiciendis rem rerum saepe sapiente similique tenetur veniam veritatis voluptas voluptatem voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor eos excepturi, fugiat in incidunt? Amet facilis in obcaecati sapiente?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci consectetur culpa dignissimos dolorem eligendi excepturi, explicabo fuga illo impedit ipsam ipsum iste libero minima molestiae nam neque, nesciunt non obcaecati odit possimus provident quaerat quidem quisquam quo reiciendis rem rerum saepe sapiente similique tenetur veniam veritatis voluptas voluptatem voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor eos excepturi, fugiat in incidunt? Amet facilis in obcaecati sapiente?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci consectetur culpa dignissimos dolorem eligendi excepturi, explicabo fuga illo impedit ipsam ipsum iste libero minima molestiae nam neque, nesciunt non obcaecati odit possimus provident quaerat quidem quisquam quo reiciendis rem rerum saepe sapiente similique tenetur veniam veritatis voluptas voluptatem voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor eos excepturi, fugiat in incidunt? Amet facilis in obcaecati sapiente?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci consectetur culpa dignissimos dolorem eligendi excepturi, explicabo fuga illo impedit ipsam ipsum iste libero minima molestiae nam neque, nesciunt non obcaecati odit possimus provident quaerat quidem quisquam quo reiciendis rem rerum saepe sapiente similique tenetur veniam veritatis voluptas voluptatem voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor eos excepturi, fugiat in incidunt? Amet facilis in obcaecati sapiente?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci consectetur culpa dignissimos dolorem eligendi excepturi, explicabo fuga illo impedit ipsam ipsum iste libero minima molestiae nam neque, nesciunt non obcaecati odit possimus provident quaerat quidem quisquam quo reiciendis rem rerum saepe sapiente similique tenetur veniam veritatis voluptas voluptatem voluptatibus.</p>
+    </div>
+</body>
+</html>

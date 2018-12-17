@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3D Transformation</title>
+    <style>
+        button{
+            background-color: darkcyan;
+            color: white;
+            border: none;
+            padding: 15px 50px;
+            font-size: 18px;
+            margin-left: 100px;
+            box-shadow: 7px 7px 7px red;
+        }
+
+        .rotatex:hover{
+            transform: rotateX(180deg);
+        }
+
+        .rotatey:hover{
+            transform: rotateY(180deg);
+        }
+
+        .rotatez:hover{
+            transform: rotateZ(180deg);
+        }
+    </style>
+</head>
+<body>
+
+
+    <h3>rotateX(180deg)</h3>
+    <button class="rotatex">
+        rotateX
+    </button>
+
+    <br><br><hr>
+
+    <h3>rotateY(180deg)</h3>
+    <button class="rotatey">
+        rotateX
+    </button>
+
+    <br><br><hr>
+
+    <h3>rotateZ(180deg)</h3>
+    <button class="rotatez">
+        rotateZ
+    </button>
+</body>
+</html>

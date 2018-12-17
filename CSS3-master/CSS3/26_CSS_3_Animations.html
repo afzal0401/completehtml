@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Animation</title>
+    <style>
+        .simple{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            animation-name: simple;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes simple {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+            }
+        }
+
+        .percentage{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            animation-name: percentage;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes percentage {
+            0%{
+                background-color: yellow;
+            }
+            25%{
+                background-color: black;
+            }
+            50%{
+                background-color: red;
+            }
+            75%{
+                background-color: blue;
+            }
+            100%{
+                background-color: orange;
+            }
+        }
+
+        .news{
+            background-color: orange;
+            color: white;
+            padding: 10px;
+            font-size: 25px;
+            animation-name: news;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes news {
+            0%{
+                background-color: orange;
+            }
+            25%{
+                background-color: orangered;
+            }
+            50%{
+                background-color: orange;
+            }
+            75%{
+                background-color: orangered;
+            }
+            100%{
+                background-color: orange;
+            }
+        }
+
+        .news p{
+            margin: 0;
+            animation-name: flash-news;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes flash-news {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+
+        .animate{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 500px;
+            animation-name: animate;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            position: relative; /* mandatory */
+        }
+
+        @keyframes animate {
+            0%{
+                background-color: red;
+                left: 0;
+                top: 0;
+                border-radius: 10%;
+                box-shadow: 7px 7px 7px green;
+                transform: rotate(90deg);
+
+            }
+            25%{
+                background-color: yellow;
+                left: 200px;
+                top:0;
+                border-radius: 20%;
+                box-shadow: 7px 7px 7px red;
+                transform: rotate(180deg);
+            }
+            50%{
+                background-color: blue;
+                left: 200px;
+                top:200px;
+                border-radius: 30%;
+                box-shadow: 7px 7px 7px yellow;
+                transform: rotate(270deg);
+            }
+            75%{
+                background-color: green;
+                left: 0;
+                top: 200px;
+                border-radius: 40%;
+                box-shadow: 7px 7px 7px blue;
+                transform: rotate(360deg);
+            }
+            100%{
+                background-color: red;
+                left: 0;
+                top: 0;
+                border-radius: 50%;
+                box-shadow: 7px 7px 7px darkcyan;
+                transform: rotate(450deg);
+            }
+        }
+
+        .task{
+            background-image: url("img/gallery2.jpeg");
+            background-attachment: fixed;
+            width: 100px;
+            height:100px;
+            border-radius: 50%;
+            box-shadow: 7px 7px 7px green;
+            margin-bottom: 300px;
+            animation-name: task;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            position: relative; /* mandatory */
+        }
+
+        @keyframes task {
+            0%{
+                top:0;
+                left: 0;
+            }
+            10% , 100%{
+                left:200px;
+                top:200px;
+            }
+            20% , 90%{
+                left:400px;
+                top:0;
+            }
+            30% , 80%{
+                left:600px;
+                top:200px;
+            }
+            40% , 70%{
+                left: 800px;
+                top:0;
+            }
+            50% , 60%{
+                left: 1000px;
+                top:200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Simple Animation</h3>
+    <div class="simple">
+
+    </div>
+
+    <br><br><hr>
+
+    <h3>percentages animation</h3>
+    <div class="percentage">
+
+    </div>
+
+    <br><br><hr>
+
+    <h3>News</h3>
+    <div class="news">
+        <p>Latest News: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptatibus?</p>
+    </div>
+
+    <br><br><hr>
+
+    <h3>Animate</h3>
+    <div class="animate">
+
+    </div>
+    <br><br><hr>
+
+    <h3>Task</h3>
+    <div class="task">
+
+    </div>
+    <br><br><hr>
+
+</body>
+</html>

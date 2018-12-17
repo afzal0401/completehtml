@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3 Transitions</title>
+    <style>
+        .transition_width{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            transition: width 2s; /* mandatory */
+        }
+
+        .transition_width:hover{
+            width: 200px;
+        }
+
+        .transition_height{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            transition: height 2s; /* mandatory */
+        }
+
+        .transition_height:hover{
+            height: 200px;
+        }
+        .transition_height_width{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 2s , height 2s; /*mandatory */
+        }
+
+        .transition_height_width:hover{
+            width: 200px;
+            height: 200px;
+        }
+
+        .transition_transform{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 2s , transform 2s; /* mandatory */
+        }
+        .transition_transform:hover{
+            width: 200px;
+            transform: rotate(180deg);
+        }
+
+        .transition_linear{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 2s;
+            transition-timing-function: linear;
+        }
+
+        .transition_linear:hover{
+            width: 200px;
+        }
+
+        .transition_easein{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s;
+
+        }
+        .transition_easein:hover{
+            width: 200px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <h2>Width</h2>
+    <div class="transition_width">
+
+    </div>
+
+    <h2>Height</h2>
+    <div class="transition_height">
+
+    </div>
+
+    <h2>Both</h2>
+    <div class="transition_height_width">
+
+    </div>
+
+    <h2>Rotate</h2>
+    <div class="transition_transform">
+        Rotate
+    </div>
+
+    <h2>Linear</h2>
+    <div class="transition_linear">
+        linear
+    </div>
+
+    <h2>ease-in</h2>
+    <div class="transition_easein">
+        ease-in
+    </div>
+
+
+
+</body>
+</html>

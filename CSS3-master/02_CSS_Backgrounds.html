@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Backgrounds</title>
+    <style>
+        .backgroundImage{
+            background-image: url("img/background.jpg");
+            height: 150px;
+            background-repeat: no-repeat;
+        }
+
+        .imagePosition{
+            background-image: url("img/gallery2.jpeg");
+            height: 150px;
+            background-position: bottom left;
+        }
+
+        .imageRepeat {
+            background-color: lightgreen;
+            height: 300px;
+            background-image: url("img/nature.jpg");
+            background-repeat: repeat-x; /* to repeat an image in X-axis */
+        }
+
+        .shortcut{
+            height: 200px;
+            background: lightgreen url("img/gallery2.jpeg") no-repeat fixed right bottom;
+        }
+    </style>
+</head>
+<body>
+
+<!-- BACKGROUND COLOR -->
+<h2>BACKGROUND COLOR</h2>
+<p style="background-color: teal">I am TEAL background</p>
+
+<!-- Shortcut Method -->
+<h2>SHORTCUT METHOD</h2>
+<div class="shortcut">
+
+</div>
+
+
+<!-- BACKGROUND IMAGE -->
+<h2>BACKGROUND IMAGE</h2>
+<div class="backgroundImage">
+    <h2>This is some Text</h2>
+</div>
+
+<br>
+<!-- BACKGROUND IMAGE POSITION -->
+<h2>BACKGROUND IMAGE POSITION</h2>
+<div class="imagePosition">
+</div>
+
+<br>
+
+<!-- BACKGROUND IMAGE REPEAT -->
+<h2>BACKGROUND IMAGE REPEAT</h2>
+<div class="imageRepeat">
+</div>
+
+</body>
+</html>
